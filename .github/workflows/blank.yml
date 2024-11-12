@@ -3,9 +3,9 @@ name: nodeseek鸡腿签到
 on:
   push:
     branches:
-      - main  # 在 main 分支上进行推送时触发 
+      - main  # 在 main 分支上进行推送时触发
   schedule:
-    - cron: '00 16 * * *'  # 每天凌晨 12 点执行 
+    - cron: '11 17 * * *'  # 每天 UTC 时间 17:11 执行，相当于中国时间 1:11 AM
 
 jobs:
   run-nodeseek-sign:
